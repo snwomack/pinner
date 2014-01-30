@@ -1,0 +1,3 @@
+# I have no idea why the command isn't working here so I put it in the pages.css.scss file.
+
+	@import 'bootstrap';
