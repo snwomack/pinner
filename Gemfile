@@ -17,6 +17,7 @@ end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
+	gem	'rails_log_stdout', github: 'heroku/rails_log_stdout'
 end
 
 group :doc do
