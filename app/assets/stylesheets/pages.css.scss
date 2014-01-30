@@ -3,13 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $navbar-default-bg:		#d35400;
 $navbar-default-link-color:	white;
-$body-bg:		#ecf0f1;
+$body-bg:		#e67e22;
 $jumbotron-bg:	#e67e22;
+
+.center 	{ 
+				text-align: center
+}
+
+.buffer		{
+				margin: 80px	
+}
+
 .img-circle { 
-			height: 200px;
-			width: 	200px;
-			margin-left: auto;
-			margin-right: auto;	
+				height: 200px;
+				width: 	200px;
+				margin-left: auto;
+				margin-right: auto;	
 }
 
 @import 'bootstrap';
