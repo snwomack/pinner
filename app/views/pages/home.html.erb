@@ -2,7 +2,15 @@
 	
 	<div class="jumbotron center">
 		<h1>You + Pub = Happy!</h1>
-			<p>Click here to <%= link_to "Sign up", "#", class: "btn btn-primary btn-primary" %>.</p>
+		<% if user_signed_in? %>
+			# do something
+		<% else %>
+
+			<p>
+				<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-primary" %>
+				<%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-primary" %>
+			</p>
+		<% end %>
 	</div>
 	
 <!--(The carousel isn't quite working like I want so I just made circular images.)-->	
@@ -49,7 +57,7 @@
        	</div>  				
         
  		 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 center">
-          <img class="img-circle" src="http://spanishfoodclub.com/wp-content/uploads/2013/12/Wine-at-Christmas.jpg" alt="Wine">
+          <img class="img-circle" src="http://www.bellinghamexplorer.com/editorUpload/bellinghamexplorer.com/glass%20of%20wine.jpg" alt="Wine">
           	<h2>The Right Experience</h2>
           				<p>Check the action before you arrive</p>
           				<p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
